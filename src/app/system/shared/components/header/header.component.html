@@ -1,0 +1,202 @@
+<header class="header" id="top">
+
+  <div class="container">
+    <ul class="menu__list">
+      <li class="menu__list-item" routerLinkActive="active">
+        <a class="menu__list-link" [routerLink]="['', 'self-diagnostics']">Самодиагностика</a>
+      </li>
+      <li class="menu__list-item"  routerLinkActive="active">
+        <a class="menu__list-link" [routerLink]="['', 'recording','type-visit']">Запись</a>
+      </li>
+      <li class="menu__list-item" routerLinkActive="active">
+        <a class="menu__list-link" [routerLink]="['', 'diagnostics']">Диагностика</a>
+      </li>
+      <li class="menu__list-item" >
+        <a class="menu__list-link" >Клиники</a>
+      </li>
+      <li class="menu__list-item" routerLinkActive="active">
+        <a class="menu__list-link" [routerLink]="['', 'doctors']">Врачи</a>
+      </li>
+      <li class="menu__list-item" >
+        <a class="menu__list-link" href="#">Справочник заболеваний</a>
+      </li>
+      <li class="menu__list-item logo" routerLinkActive="active">
+        <a class="menu__logo-link" [routerLink]="['', 'main']">
+          <img class="menu__logo-img" src="../../../../../assets/pics/logo.png" alt="logo">
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</header>
+<div class="main" id="top">
+
+  <nav class="sidebar">
+
+    <div class="sidebar__userinfo" >
+      <div class="sidebar__userinfo-choice">
+        <p class="sidebar__userinfo-link">Нижний Новгород</p>
+      </div>
+
+      <div class="sidebar__userinfo-face">
+        <img class="sidebar__userinfo-img" src="../../../../../assets/pics/user001.png" alt="user">
+      </div>
+
+      <ul class="sidebar__userinfo-list" style="margin-bottom: 0px;">
+
+        <li class="sidebar__userinfo-item">
+          <p class="sidebar__userinfo-link" href="#">Иванов Иван</p>
+        </li>
+
+        <li class="sidebar__userinfo-item">
+          <p class="sidebar__userinfo-link" href="#">Пациент</p>
+        </li>
+
+        <li class="sidebar__userinfo-choice">
+          <p class="sidebar__userinfo-link" href="#">Поликлиника №4</p>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <ul class="sidebar__nav-list">
+
+      <li class="sidebar__nav-title">
+        <span>Навигация</span>
+      </li>
+
+      <div class="sidebar__nav-group">
+
+        <a class="sidebar__nav-item" href="#">
+          <img class="sidebar__nav-img" src="../../../../../assets/pics/nav/nav1.svg" alt="nav">
+          <p class="sidebar__nav-link" href="#">Уведомления</p>
+        </a>
+
+        <!-- Общение -->
+
+
+
+        <div class="btn-group dropright sidebar__nav-item">
+          <button type="button" class="btn btn-secondary dropdown-toggle sidebar__nav-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+            <img class="sidebar__nav-img" src="../../../../../assets/pics/nav/nav12.svg" alt="nav">
+            <a href="" class="sidebar__nav-link">Общение</a>
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown__nav-item" href="#">
+              <img class="sidebar__nav-img" src="../../../../../assets/pics/nav/nav3.svg" alt="nav">
+              <p class="sidebar__nav-link" href="#">Сообщения</p>
+            </a>
+
+            <a class="dropdown__nav-item" href="#">
+              <img class="sidebar__nav-img" src="../../../../../assets/pics/nav/nav13.svg" alt="nav">
+              <p class="sidebar__nav-link" href="#">Друзья</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Приемы -->
+
+        <div class="btn-group dropright sidebar__nav-item">
+          <button type="button" class="btn btn-secondary dropdown-toggle sidebar__nav-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img class="sidebar__nav-img" src="../../../../../assets/pics/nav/nav5.svg" alt="nav">
+            <a href="" class="sidebar__nav-link">Приёмы</a>
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown__nav-item" href="#">
+              <img class="sidebar__nav-img" src="../../../../../assets/pics/nav/nav6.svg" alt="nav">
+              <p class="sidebar__nav-link" href="#">Мои приемы</p>
+            </a>
+
+            <a class="dropdown__nav-item" href="#">
+              <img class="sidebar__nav-img" src="../../../../../assets/pics/nav/nav7.svg" alt="nav">
+              <p class="sidebar__nav-link" href="#">Назначенные визиты</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Медкарта -->
+
+        <div class="btn-group dropright sidebar__nav-item">
+          <button type="button" class="btn btn-secondary dropdown-toggle sidebar__nav-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img class="sidebar__nav-img" src="../../../../../assets/pics/nav/medcart.svg" alt="nav">
+            <a href="" class="sidebar__nav-link">Медкарта</a>
+          </button>
+          <div class="dropdown-menu dropdown-menu-big" >
+            <div class="dropdown__wrapper">
+              <div class="dropdown__nav-group">
+                <a class="dropdown__nav-item" href="#">
+                  <img class="sidebar__nav-img" src="../../../../../assets/pics/nav/cart.svg" alt="nav">
+                  <p class="sidebar__nav-link" href="#">Моя карта</p>
+                </a>
+
+                <a class="dropdown__nav-item" href="#">
+                  <img class="sidebar__nav-img" src="../../../../../assets/pics/nav/nav12.svg" alt="nav">
+                  <p class="sidebar__nav-link" href="#">Мои исследования</p>
+                </a>
+
+                <a class="dropdown__nav-item" href="#">
+                  <img class="sidebar__nav-img" src="../../../../../assets/pics/nav/nav15.svg" alt="nav">
+                  <p class="sidebar__nav-link" href="#">Мои выписки из стационара</p>
+                </a>
+              </div>
+
+              <div class="dropdown__nav-group">
+                <a class="dropdown__nav-item" href="#">
+                  <img class="sidebar__nav-img" src="../../../../../assets/pics/nav/recipes.svg" alt="nav">
+                  <p class="sidebar__nav-link" href="#">Мои рецепты</p>
+                </a>
+
+                <a class="dropdown__nav-item" href="#">
+                  <img class="sidebar__nav-img" src="../../../../../assets/pics/nav/exiting.svg" alt="nav">
+                  <p class="sidebar__nav-link" href="#">Мои выписки</p>
+                </a>
+
+                <a class="dropdown__nav-item" href="#">
+                  <img class="sidebar__nav-img" src="../../../../../assets/pics/nav/nav16.svg" alt="nav">
+                  <p class="sidebar__nav-link" href="#">Мои справки</p>
+                </a>
+              </div>
+
+              <div class="dropdown__nav-group">
+                <a class="dropdown__nav-item" href="#">
+                  <img class="sidebar__nav-img" src="../../../../../assets/pics/nav/analyze.svg" alt="nav">
+                  <p class="sidebar__nav-link" href="#">Мои анализы</p>
+                </a>
+
+                <a class="dropdown__nav-item" href="#">
+                  <img class="sidebar__nav-img" src="../../../../../assets/pics/nav/nav14.svg" alt="nav">
+                  <p class="sidebar__nav-link" href="#">Мои привычки</p>
+                </a>
+
+                <a class="dropdown__nav-item" href="#">
+                  <img class="sidebar__nav-img" src="../../../../../assets/pics/nav/nav17.svg" alt="nav">
+                  <p class="sidebar__nav-link" href="#">Мои больничные</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <li class="sidebar__nav-item">
+          <img class="sidebar__nav-img" src="../../../../../assets/pics/nav/diary.svg" alt="nav">
+          <a class="sidebar__nav-link" href="#">Дневник здоровья</a>
+        </li>
+
+        <li class="sidebar__nav-item">
+          <img class="sidebar__nav-img" src="../../../../../assets/pics/nav/nav19.svg" alt="nav">
+          <a class="sidebar__nav-link" href="#">Мои тесты на COVID-19</a>
+        </li>
+
+        <li class="sidebar__nav-item">
+          <img class="sidebar__nav-img" src="../../../../../assets/pics/nav/nav20.svg" alt="nav">
+          <a class="sidebar__nav-link" href="#">Сан-курортная карта</a>
+        </li>
+      </div>
+
+
+    </ul>
+
+  </nav>
+</div>

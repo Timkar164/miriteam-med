@@ -1,0 +1,57 @@
+<div class="main__info">
+
+  <section class="record__list">
+
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header record__list-top" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link record__list-title img1-1" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Онлайн- консультация
+              <img class="collapsed-img1-1" src="./../../../assets/pics/point1.svg" alt="" >
+              <img class="collapsed-img1-2" src="./../../../assets/pics/point2.svg" alt="" >
+            </button>
+          </h5>
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <div class="card-header record__list-top" >
+          <h5 class="mb-0">
+            <button class="btn btn-link record__list-title img2-1" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Приём в клинике
+              <img class="collapsed-img2-1" src="./../../../assets/pics/point1.svg" alt="" >
+              <img class="collapsed-img2-2" src="./../../../assets/pics/point2.svg" alt="" >
+            </button>
+          </h5>
+        </div>
+
+
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
+
+            <div class="progres">
+              <a [routerLink]="['','recording', 'type-visit']" routerLinkActive="active">
+                <p class="progres-title">Тип визита</p>
+              </a>
+              <a [routerLink]="['','recording', 'questioning']" routerLinkActive="active">
+                <p class="progres-title">Анкетирование</p>
+              </a>
+              <a [routerLink]="['','recording', 'appointment']" routerLinkActive="active">
+                <p class="progres-title">Запись на прием</p>
+              </a>
+            </div>
+  <router-outlet></router-outlet>
+          </div>
+        </div>
+
+
+        <div class="record__list-item">
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>

@@ -1,0 +1,97 @@
+<div class="main__info">
+
+  <div class="container">
+    <div class="diagnosis__examination-wrapper">
+      <div class="diagnosis__analyzes">
+        <a class="diagnosis__analyzes-link" href="#">
+          <img class="diagnosis__analyzes-img" src="./../../../assets/pics/analyzes.png" alt="analyzes">
+        </a>
+      </div>
+      <div class="diagnosis__examination">
+        <a class="diagnosis__analyzes-link" href="#">
+          <img class="diagnosis__examination-img" src="./../../../assets/pics/examination.png" alt="examination">
+        </a>
+      </div>
+      <div class="card-body diagnosis__examination-card">
+        <h3 class="record__main-title">Выберите тип анализа:</h3>
+        <!--  -->
+
+        <div class="dropdown">
+          <a class="btn btn-secondary dropdown-toggle diagnosis__examination-btn" href="#" role="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Выберите тип анализа:
+          </a>
+
+          <div class="dropdown-menu diagnosis__examination-dropdown" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Анализ уровня тестостерона в крови</a>
+            <a class="dropdown-item" href="#">Анализ уровня тестостерона в крови</a>
+            <a class="dropdown-item" href="#">Анализ уровня тестостерона в крови</a>
+          </div>
+        </div>
+        <hr class="record-hr">
+
+        <h3 class="record__main-title">Выберите дату прихода:</h3>
+        <!-- календарь -->
+        
+        <div class="wrapper">
+          <div class="container-calendar">
+              <h3 id="monthAndYear"></h3>
+              <div class="button-container-calendar">
+                  <button id="previous" (click)="previous()">&#8249;</button>
+                  <button id="next" (click)="next()">&#8250;</button>
+              </div>
+              
+              <table class="table-calendar" id="calendar" data-lang="en">
+                  <thead id="thead-month"></thead>
+                  <tbody id="calendar-body"></tbody>
+              </table>
+              
+              <div class="footer-container-calendar">
+                  <label for="month">Выбрать: </label>
+                  <select id="month" (click)="jump()">
+                      <option value=0>Январь</option>
+                      <option value=1>Февраль</option>
+                      <option value=2>Март</option>
+                      <option value=3>Апрель</option>
+                      <option value=4>Май</option>
+                      <option value=5>Июнь</option>
+                      <option value=6>Июль</option>
+                      <option value=7>Август</option>
+                      <option value=8>Сентябрь</option>
+                      <option value=9>Октябрь</option>
+                      <option value=10>Ноябрь</option>
+                      <option value=11>Декабрь</option>
+                  </select>
+                  <select id="year" (click)="jump()"></select>       
+              </div>
+          </div>
+        </div>
+
+        <!--  -->
+        <a class="record__accordeon-btn" href="#">Готово</a>
+      </div>
+
+      <div class="card-body diagnosis__examination-card">
+        <h3 class="record__main-title">Выберите тип обследования:</h3>
+        <div class="dropdown">
+          <a class="btn btn-secondary dropdown-toggle diagnosis__examination-btn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Выберите тип обследования:
+          </a>
+
+          <div class="dropdown-menu diagnosis__examination-dropdown" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">МРТ</a>
+            <a class="dropdown-item" href="#">МРТ</a>
+            <a class="dropdown-item" href="#">МРТ</a>
+          </div>
+        </div>
+        <hr class="record-hr">
+
+        <h3 class="record__main-title">Выберите дату прихода:</h3>
+        <!-- календарь -->
+        
+        <!--  -->
+        <a class="record__accordeon-btn" [routerLink]="['', 'login']"  href="#">Готово</a>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,314 @@
+<div class="main__info">
+
+  <div class="container">
+    <div class="doctor__search">
+      <div class="doctor__search-item">
+        <a class="doctor__search-link" href="#">
+          <img class="doctor__search-img" src="./../../../assets/pics/az.svg" alt="alphavit">
+        </a>
+        <a class="doctor__search-link" href="#">
+          <img class="doctor__search-img" src="./../../../assets/pics/za.svg" alt="alphavit">
+        </a>
+      </div>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          <img class="form__search-img" src="./../../../assets/pics/search.svg" alt="">
+        </button>
+      </form>
+    </div>
+
+    <!-- dropdown -->
+    <div class="doctor-item">
+      <div class="doctor__title">
+        <h3 class="doctor__title-text">
+          <a class="consultetion__title-link" href="#">Специальность</a>
+          <hr>
+        </h3>
+        <img class="doctor__title-img" (click)="openSpecialization()" src="./../../../assets/pics/arrow-mini.svg" alt="">
+      </div>
+      <ul class="doctor__dropdown">
+        <li *ngIf="dropdown_flag" class="doctor__dropdown-item">
+          <a class="consultetion__title-link" href="#">Гастроэнтеролог</a>
+        </li>
+        <li *ngIf="dropdown_flag" class="doctor__dropdown-item">
+          <a class="consultetion__title-link" href="#">Гинеколог</a>
+        </li>
+        <li *ngIf="dropdown_flag" class="doctor__dropdown-item">
+          <a class="consultetion__title-link" href="#">Невролог</a>
+        </li>
+      </ul>
+    </div>
+
+
+    <!-- doctor field -->
+    <div class="doctor__field">
+      <div class="doctor__field-main">
+        <div class="doctor__field-item">
+          <a [routerLink]="['', 'doctor']" routerLinkActive="active">
+            <img class="doctor__field-avatar" src="./../../../assets/pics/avatar.png" alt="">
+          </a>
+
+          <div class="doctor__field-rating">
+            <img class="doctor__field-star" src="./../../../assets/pics/star.svg" alt="">
+            <img class="doctor__field-star" src="./../../../assets/pics/star.svg" alt="">
+            <img class="doctor__field-star" src="./../../../assets/pics/star.svg" alt="">
+            <img class="doctor__field-star" src="./../../../assets/pics/star.svg" alt="">
+            <img class="doctor__field-star" src="./../../../assets/pics/star.svg" alt="">
+          </div>
+        </div>
+        <div class="doctor__field-item">
+          <h5 class="doctor__field-prof">Акушер Гинеколог Эндокринолог</h5>
+          <h2 class="doctor__field-name">Гутникова Виктория Яковлевна</h2>
+          <div class="doctor__field-wrapper">
+            <div class="doctor__field-info">
+              <p class="doctor__field-exp">Стаж: 25 лет</p>
+              <p class="doctor__field-category">Врач высшей категории</p>
+              <p class="doctor__field-title-mini">Телефон для записи:</p>
+              <p class="doctor__field-phone">8 (831) 234-45-67</p>
+            </div>
+            <div class="doctor__field-timing">
+              <h3 class="doctor__field-timing-title">Часы работы</h3>
+              <div class="doctor__field-timing-grid">
+                <div class="doctor__field-day">
+                  <p class="doctor__field-text">пн</p>
+                </div>
+                <div class="doctor__field-time">
+                  <p class="doctor__field-text">09:00-11:30</p>
+                </div>
+                <div class="doctor__field-day">
+                  <p class="doctor__field-text">вт</p>
+                </div>
+                <div class="doctor__field-time">
+                  <p class="doctor__field-text">08:00-10:30</p>
+                </div>
+                <div class="doctor__field-day">
+                  <p class="doctor__field-text">ср</p>
+                </div>
+                <div class="doctor__field-time">
+                  <p class="doctor__field-text">13:00-15:30</p>
+                </div>
+                <div class="doctor__field-day">
+                  <p class="doctor__field-text">чт</p>
+                </div>
+                <div class="doctor__field-time">
+                  <p class="doctor__field-text">09:00-11:30</p>
+                </div>
+                <div class="doctor__field-day">
+                  <p class="doctor__field-text">пт</p>
+                </div>
+                <div class="doctor__field-time">
+                  <p class="doctor__field-text">16:00-17:30</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="doctor__field-footer">
+        <a class="doctor__field-link" href="#">Записаться на прием</a>
+        <a class="doctor__field-link" href="#">Написать сообщение</a>
+      </div>
+    </div>
+
+    <div class="doctor__field">
+      <div class="doctor__field-main">
+        <div class="doctor__field-item">
+          <img class="doctor__field-avatar" src="./../../../assets/pics/avatar.png" alt="">
+          <div class="doctor__field-rating">
+            <img class="doctor__field-star" src="./../../../assets/pics/star.svg" alt="">
+            <img class="doctor__field-star" src="./../../../assets/pics/star.svg" alt="">
+            <img class="doctor__field-star" src="./../../../assets/pics/star.svg" alt="">
+            <img class="doctor__field-star" src="./../../../assets/pics/star.svg" alt="">
+            <img class="doctor__field-star" src="./../../../assets/pics/star.svg" alt="">
+          </div>
+        </div>
+        <div class="doctor__field-item">
+          <h5 class="doctor__field-prof">Гастроэнтеролог</h5>
+          <h2 class="doctor__field-name">Кадохова Вера Валерьевна</h2>
+          <div class="doctor__field-wrapper">
+            <div class="doctor__field-info">
+              <p class="doctor__field-exp">Стаж 28 лет</p>
+              <p class="doctor__field-category">· Врач высшей категории</p>
+              <p class="doctor__field-title-mini">Телефон для записи:</p>
+              <p class="doctor__field-phone">8 (763) 215-21-60</p>
+            </div>
+            <div class="doctor__field-timing">
+              <h3 class="doctor__field-timing-title">Часы работы</h3>
+              <div class="doctor__field-timing-grid">
+                <div class="doctor__field-day">
+                  <p class="doctor__field-text">пн</p>
+                </div>
+                <div class="doctor__field-time">
+                  <p class="doctor__field-text">09:00-11:30</p>
+                </div>
+                <div class="doctor__field-day">
+                  <p class="doctor__field-text">вт</p>
+                </div>
+                <div class="doctor__field-time">
+                  <p class="doctor__field-text">08:00-10:30</p>
+                </div>
+                <div class="doctor__field-day">
+                  <p class="doctor__field-text">ср</p>
+                </div>
+                <div class="doctor__field-time">
+                  <p class="doctor__field-text">13:00-15:30</p>
+                </div>
+                <div class="doctor__field-day">
+                  <p class="doctor__field-text">чт</p>
+                </div>
+                <div class="doctor__field-time">
+                  <p class="doctor__field-text">09:00-11:30</p>
+                </div>
+                <div class="doctor__field-day">
+                  <p class="doctor__field-text">пт</p>
+                </div>
+                <div class="doctor__field-time">
+                  <p class="doctor__field-text">16:00-17:30</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="doctor__field-footer">
+        <a class="doctor__field-link" href="#">Записаться на прием</a>
+        <a class="doctor__field-link" href="#">Написать сообщение</a>
+      </div>
+    </div>
+
+    <div class="doctor__field">
+      <div class="doctor__field-main">
+        <div class="doctor__field-item">
+          <img class="doctor__field-avatar" src="./../../../assets/pics/avatar.png" alt="">
+          <div class="doctor__field-rating">
+            <img class="doctor__field-star" src="./../../../assets/pics/star.svg" alt="">
+            <img class="doctor__field-star" src="./../../../assets/pics/star.svg" alt="">
+            <img class="doctor__field-star" src="./../../../assets/pics/star.svg" alt="">
+            <img class="doctor__field-star" src="./../../../assets/pics/star.svg" alt="">
+            <img class="doctor__field-star" src="./../../../assets/pics/star.svg" alt="">
+          </div>
+        </div>
+        <div class="doctor__field-item">
+          <h5 class="doctor__field-prof">Гастроэнтеролог</h5>
+          <h2 class="doctor__field-name">Царев Вячеслав Юрьевич</h2>
+          <div class="doctor__field-wrapper">
+            <div class="doctor__field-info">
+              <p class="doctor__field-exp">Стаж: 32 лет</p>
+              <p class="doctor__field-category">Врач высшей категории</p>
+              <p class="doctor__field-title-mini">Телефон для записи:</p>
+              <p class="doctor__field-phone">8 (987) 123-45-77</p>
+            </div>
+            <div class="doctor__field-timing">
+              <h3 class="doctor__field-timing-title">Часы работы</h3>
+              <div class="doctor__field-timing-grid">
+                <div class="doctor__field-day">
+                  <p class="doctor__field-text">пн</p>
+                </div>
+                <div class="doctor__field-time">
+                  <p class="doctor__field-text">09:00-11:30</p>
+                </div>
+                <div class="doctor__field-day">
+                  <p class="doctor__field-text">вт</p>
+                </div>
+                <div class="doctor__field-time">
+                  <p class="doctor__field-text">08:00-10:30</p>
+                </div>
+                <div class="doctor__field-day">
+                  <p class="doctor__field-text">ср</p>
+                </div>
+                <div class="doctor__field-time">
+                  <p class="doctor__field-text">13:00-15:30</p>
+                </div>
+                <div class="doctor__field-day">
+                  <p class="doctor__field-text">чт</p>
+                </div>
+                <div class="doctor__field-time">
+                  <p class="doctor__field-text">09:00-11:30</p>
+                </div>
+                <div class="doctor__field-day">
+                  <p class="doctor__field-text">пт</p>
+                </div>
+                <div class="doctor__field-time">
+                  <p class="doctor__field-text">16:00-17:30</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="doctor__field-footer">
+        <a class="doctor__field-link" href="#">Записаться на прием</a>
+        <a class="doctor__field-link" href="#">Написать сообщение</a>
+      </div>
+    </div>
+
+    <div class="doctor__field">
+      <div class="doctor__field-main">
+        <div class="doctor__field-item">
+          <img class="doctor__field-avatar" src="./../../../assets/pics/avatar.png" alt="">
+          <div class="doctor__field-rating">
+            <img class="doctor__field-star" src="./../../../assets/pics/star.svg" alt="">
+            <img class="doctor__field-star" src="./../../../assets/pics/star.svg" alt="">
+            <img class="doctor__field-star" src="./../../../assets/pics/star.svg" alt="">
+            <img class="doctor__field-star" src="./../../../assets/pics/star.svg" alt="">
+            <img class="doctor__field-star" src="./../../../assets/pics/star.svg" alt="">
+          </div>
+        </div>
+        <div class="doctor__field-item">
+          <h5 class="doctor__field-prof">Невролог</h5>
+          <h2 class="doctor__field-name">Федотова Анастасия Валерьевна</h2>
+          <div class="doctor__field-wrapper">
+            <div class="doctor__field-info">
+              <p class="doctor__field-exp">Стаж: 20 лет</p>
+              <p class="doctor__field-category">Врач высшей категории</p>
+              <p class="doctor__field-title-mini">Телефон для записи:</p>
+              <p class="doctor__field-phone">8 (876) 589-164-12</p>
+            </div>
+            <div class="doctor__field-timing">
+              <h3 class="doctor__field-timing-title">Часы работы</h3>
+              <div class="doctor__field-timing-grid">
+                <div class="doctor__field-day">
+                  <p class="doctor__field-text">пн</p>
+                </div>
+                <div class="doctor__field-time">
+                  <p class="doctor__field-text">09:00-11:30</p>
+                </div>
+                <div class="doctor__field-day">
+                  <p class="doctor__field-text">вт</p>
+                </div>
+                <div class="doctor__field-time">
+                  <p class="doctor__field-text">08:00-10:30</p>
+                </div>
+                <div class="doctor__field-day">
+                  <p class="doctor__field-text">ср</p>
+                </div>
+                <div class="doctor__field-time">
+                  <p class="doctor__field-text">13:00-15:30</p>
+                </div>
+                <div class="doctor__field-day">
+                  <p class="doctor__field-text">чт</p>
+                </div>
+                <div class="doctor__field-time">
+                  <p class="doctor__field-text">09:00-11:30</p>
+                </div>
+                <div class="doctor__field-day">
+                  <p class="doctor__field-text">пт</p>
+                </div>
+                <div class="doctor__field-time">
+                  <p class="doctor__field-text">16:00-17:30</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="doctor__field-footer">
+        <a class="doctor__field-link" href="#">Записаться на прием</a>
+        <a class="doctor__field-link" href="#">Написать сообщение</a>
+      </div>
+    </div>
+
+  </div>
+
+</div>

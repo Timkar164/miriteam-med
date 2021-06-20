@@ -1,0 +1,179 @@
+<div class="main__info">
+
+  <section class="top-info">
+    <div class="container">
+      <div class="top-info__wrapper">
+        <img class="top-info__img" src="./../../../assets/pics/top__info.png" alt="info">
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="functions">
+    <div class="container">
+      <h2  routerLinkActive="active" class="title" style="margin-bottom: 130px;">Функции сервиса</h2>
+      <div class="functions__grid">
+        <div class="functions__grid-group">
+          <a class="functions__grid-item" [routerLink]="['','recording']" routerLinkActive="active">
+              <img class="functions__grid-img" src="./../../../assets/pics/funcs/pic_6.png" alt="func">
+            <h3  class="functions__grid-text">Запись</h3>
+          </a>
+
+          <a class="functions__grid-item" [routerLink]="['', 'self-diagnostics']" routerLinkActive="active" >
+            <img class="functions__grid-img" src="./../../../assets/pics/funcs/pic_1.png" alt="func">
+            <h3  class="functions__grid-text">Самодиагностика</h3>
+          </a>
+
+          <a class="functions__grid-item"  [routerLink]="['', 'diagnostics']" routerLinkActive="active" >
+            <img class="functions__grid-img" src="./../../../assets/pics/funcs/pic_7.png" alt="func">
+            <h3  class="functions__grid-text">Диагностика</h3>
+          </a>
+        </div>
+
+        <div class="functions__grid-group">
+          <a class="functions__grid-item" href="#">
+            <img class="functions__grid-img" src="./../../../assets/pics/funcs/pic_5.png" alt="func">
+            <h3 routerLinkActive="active" class="functions__grid-text">Медкарта</h3>
+          </a>
+
+          <a class="functions__grid-item" href="#">
+            <img class="functions__grid-img" src="./../../../assets/pics/funcs/pic_2.png" alt="func">
+            <h3 routerLinkActive="active" class="functions__grid-text">Сан-курортная карта</h3>
+          </a>
+
+          <a class="functions__grid-item" href="#">
+            <img class="functions__grid-img" src="./../../../assets/pics/funcs/pic_4.png" alt="func">
+            <h3 routerLinkActive="active" class="functions__grid-text">Дневник здоровья</h3>
+          </a>
+        </div>
+
+        <a class="functions__grid-item" href="#" style="margin-top: -80px;">
+          <img class="functions__grid-img" src="./../../../assets/pics/funcs/pic_3.png" alt="func">
+          <h3 routerLinkActive="active" class="functions__grid-text">Выписать рецепт</h3>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="news">
+    <div class="container">
+      <h2 class="title">Актуальные новости</h2>
+      <div class="news__list">
+        <a class="news__list-item today" href="#">
+          <h2 class="news__list-title">"Спутник Лайт"</h2>
+          <p class="news__list-text">Мурашко анонсировал начало использования вакцины "Спутник Лайт" </p>
+          <p class="news__list-date">17.06.2021</p>
+        </a>
+        <a class="news__list-item" href="#">
+          <h2 class="news__list-title">Воздействие риновируса</h2>
+          <p class="news__list-text">Учёные исследовали связь простуды, интерферона и COVID-19</p>
+          <p class="news__list-date">15.06.2021</p>
+        </a>
+        <a class="news__list-item" href="#">
+          <h2 class="news__list-title">Медицинский атом</h2>
+          <p class="news__list-text">Российские учёные разработали метод получения радионуклида для диагностики рака</p>
+          <p class="news__list-date">27.05.2021</p>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="steps">
+    <div class="container">
+      <h2 class="title">Основная инструкция</h2>
+      <div class="steps__menu">
+        <div class="steps__menu-item">
+          <a class="steps__menu-step top one" [routerLink]="['','login']" routerLinkActive="active">
+            <h2 class="steps__menu-title">Шаг первый</h2>
+            <p class="steps__menu-text">Авторизируйтесь</p>
+          </a>
+          <a class="steps__menu-step three" href="#">
+            <h2 class="steps__menu-title">Шаг третий</h2>
+            <p class="steps__menu-text">Запишитесь к врачу</p>
+          </a>
+        </div>
+
+        <div class="steps__menu-item">
+          <img class="steps__menu-img" src="./../../../assets/pics/step.svg" alt="step">
+        </div>
+
+        <div class="steps__menu-item">
+          <a class="steps__menu-step top  two" href="#">
+            <h2 class="steps__menu-title">Шаг второй</h2>
+            <p class="steps__menu-text">Пройдите самодиагностику</p>
+          </a>
+          <a class="steps__menu-step four" href="#">
+            <h2 class="steps__menu-title">Шаг четвёртый</h2>
+            <p class="steps__menu-text">Пока ожидаете своей очереди, ознакомьтесь с полным функционалом сервиса</p>
+          </a>
+        </div>
+      </div>
+      <a class="steps__link" href="#">Все инструкции</a>
+    </div>
+  </section>
+
+  <section class="answer">
+    <div class="container">
+      <h2 class="title">Часто задаваемые вопросы</h2>
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Авторизация на портале
+              </button>
+            </h5>
+          </div>
+
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              В учётную запись на портале Госуслуг можно войти (авторизоваться) по паролю или с помощью Квалифицированной электронной подписи (КЭП).<br>
+
+              Чтобы войти по паролю, введите на странице авторизации:<br>
+
+              1. Логин — номер мобильного телефона, адрес электронной почты, СНИЛС.<br>
+              2. Пароль, который вы придумали при регистрации.<br>
+              3. Нажмите Войти.<br>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Как изменить пароль
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+              Перейдите в Настройки учётной записи. В блоке Безопасность выберите Изменить пароль. На экране появится форма для смены пароля. Укажите в ней старый пароль и придумайте новый.
+
+              Новый пароль сохранится, когда вы нажмёте Изменить. Если в вашем профиле указан и подтвержден адрес электронной почты, на него придет уведомление об изменении пароля с адреса no-reply@gosuslugi.ru.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Регистрация на портале
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+              Для регистрации на нашем портале необходимо сначала ввести номер телефона или почту, после код, который придет в сообщения.
+              Далее для завершения регистрации необходимо ввести следующие данные: фамилию, имя, отчетство (необзательно), пол, дату рождения, место жительства и СНИЛС.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</div>

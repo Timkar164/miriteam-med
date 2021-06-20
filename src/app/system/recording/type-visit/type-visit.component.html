@@ -1,0 +1,33 @@
+<img class="progres-img" src="../../../../assets/pics/progress.svg" alt="progress">
+
+<div class="position">
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Тип визита
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">Первичный</a>
+      <a class="dropdown-item" href="#">Вторичный</a>
+    </div>
+  </div>
+
+</div>
+<p class="text">Хотите пройти анкетирование?</p>
+<div class="general__sym-list">
+  <div class="general__sym-item">
+    <ul class="general__sym-choice">
+      <li class="general__sym-point">
+        <input class="general__sym-input" type="checkbox">
+        <p class="general__sym-text">Да</p>
+      </li>
+      <li class="general__sym-point" style="position: absolute;margin-right: 50px;">
+        <input class="general__sym-input" type="checkbox">
+        <p class="general__sym-text">Нет</p>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+<a class="next" [routerLink]="['','recording', 'questioning']" routerLinkActive="active">Далее</a>
